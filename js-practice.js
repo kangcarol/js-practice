@@ -83,3 +83,38 @@ function findAverage(array) {
   }
 }
 
+//-----------------
+
+function getMiddle(s)
+{
+  return (s.length % 2 !== 0) ? s[Math.ceil(s.length/2)-1] : s[Math.floor(s.length/2-1)]+s[Math.floor(s.length/2)]
+}
+
+console.log("middle", getMiddle("test"))
+console.log("middle", getMiddle("testing"))
+
+//-----------------
+
+
+function descendingOrder(n){
+  let str = n.toString()
+  let arr = str.split("")
+  
+  let sortedArr = arr.map(char => parseInt(char)).sort(function(a,b){return b-a})
+  return parseInt(sortedArr.join(""))
+
+
+  // return (arr.map(char => parseInt(char))).join("")
+  
+  // change number into string
+  // split string, becomes array of characters
+  // change char into number (MAP!)
+  
+      // maybe sort THEN??
+  
+  // sort descending array of numbers
+  // join back up again into str
+  // change str back into number
+}
+
+console.log(descendingOrder(1021))
