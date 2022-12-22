@@ -61,3 +61,25 @@ var max = function(list){
 // * [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
 // * [42, 54, 65, 87, 0]             -> min = 0, max = 87
 // * [5]                             -> min = 5, max = 5
+
+//-------------------
+
+// Write a function which calculates the average of the numbers in a given list.
+
+function findAverage(array) {
+  return (array.reduce((acc, current) => acc + current ))/array.length
+}
+
+//-----------
+
+// Write a function which calculates the average of the numbers in a given list.
+// Note: Empty arrays should return 0.
+
+function findAverage(array) {
+  if (array.length > 0){
+    return (array.reduce((acc, current) => acc + current ))/array.length  
+  } else{
+    return 0  
+  }
+}
+
