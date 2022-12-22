@@ -118,3 +118,17 @@ function descendingOrder(n){
 }
 
 console.log(descendingOrder(1021))
+
+
+//----------------
+
+function findShort(s){
+  let words = s.split(' ')
+  let lengths = words.map(word => word.length)
+  return Math.min(...lengths)
+  
+}
+
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
+
+//----------------
