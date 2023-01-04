@@ -132,3 +132,31 @@ function findShort(s){
 console.log(findShort("bitcoin take over the world maybe who knows perhaps"))
 
 //----------------
+
+const multiply = (a,b) => { 
+  return a* b
+}
+
+console.log("MULTIPLY =", multiply(5,6))
+
+
+//----------------
+
+function fizzbuzz(num){
+  
+  if (num % 15 === 0) {
+    return 'fizzbuzz'
+  }
+
+  if (num % 5 === 0){
+    return 'fizz'
+  }
+
+  if (num %3 === 0) {
+    return 'buzz'
+  }
+}
+
+console.log("FIZZBUZZ", fizzbuzz(10)) // fizz 
+console.log("FIZZBUZZ", fizzbuzz(9)) // buzz
+console.log("FIZZBUZZ", fizzbuzz(15)) // fizzbuzz
